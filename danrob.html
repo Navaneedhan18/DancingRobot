@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot</title>
+    <h1>Dancing Robot</h1>
+    <style>
+     body{
+    background: linear-gradient(rgb(9, 105, 239), rgb(9, 105, 239),rgb(9, 105, 239),rgb(9, 105, 239),rgb(9, 105, 239));
+}
+h1{
+    color: chartreuse;
+    text-align: center;
+}
+.container
+{
+    height: 1000px;
+    width: 2000px;
+    border:3px solid red;
+    margin: auto;
+}
+
+.face
+{
+    height: 125px;
+    width: 150px;
+    background: chartreuse;
+    margin: auto;
+    margin-top: 100px;
+    border-top-right-radius:50% ;
+    border-top-left-radius: 50%;
+    position:sticky;
+    animation-duration: 0.5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    
+}
+.container:hover .face{
+ 
+   animation: face 1s infinite;
+}
+@keyframes face{0%{
+    background: wheat;left:0px;top:0px;
+}
+25%{
+    background: blue;right:200px;top:0px;
+
+}
+50%{
+    background: pink;right:200px;top:0px;
+
+}
+75%{
+    background: yellow;left:0px;top:200px;
+
+}
+100%{
+    background: blueviolet;right:0px;top:0px;
+
+}
+ 
+}
+.eye{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    padding-top: 40%;
+
+}
+.leye
+{
+    height: 35px;
+    width: 25px;
+    background: rgb(10, 1, 1);
+    border-radius: 50px;
+    transition: height 1s ease;
+}
+.container:hover .leye{
+    animation: leye 0.5s infinite;
+}
+@keyframes leye{
+    0%{
+    height: 0px;
+    background: blueviolet;
+}
+25%{
+    height: 35px;
+    background: rgb(8, 234, 113);
+}
+50%{
+    height: 0px;
+    background: rgb(244, 17, 36);
+}
+75%{
+    height: 35px;
+    background: chocolate;
+
+}
+100%{
+    height: 0px;
+    background-color: beige;
+}}
+.reye
+{
+    height: 35px;
+    width: 25px;
+    background: rgb(10, 1, 1);
+    border-radius: 50px;
+}
+.container:hover .reye{
+    animation: reye 0.5s infinite;
+}
+@keyframes reye{
+    0%{
+    height: 0px;
+    background: blueviolet;
+}
+25%{
+    height: 35px;
+    background: blue;
+}
+50%{
+    height: 0px;
+    background: rgb(244, 17, 36);
+}
+75%{
+    height: 35px;
+    background: chocolate;
+
+}
+100%{
+    height: 0px;
+    background-color: beige;
+}}
+.body
+{
+    display: flex;
+    width: 190px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.larm
+{
+    
+    height: 85px;
+    width: 40px;
+    background: chartreuse;
+    margin-top: 15%;
+    border-bottom-right-radius: 40%;
+     border-bottom-left-radius: 40% ;
+     border-top-right-radius: 40%;
+     border-top-left-radius: 40;
+     
+}
+.container:hover .larm{
+    animation: larm 1s infinite;
+}
+@keyframes larm{
+    0%{
+        transform:rotate(90deg) ;
+        transform-origin: top center;
+        background: red;
+    }
+    25%{
+        transform:rotate(0deg) ;
+        transform-origin: top center;
+        background: rgb(98, 6, 236);
+    }
+    50%{
+        transform:rotate(-90deg) ;
+        transform-origin: top center;
+        background: blueviolet;
+    }
+    75%{
+        transform:rotate(0deg) ;
+        transform-origin: top center;
+        background: rgb(227, 206, 14);
+    }
+    100%{
+        transform:rotate(90deg) ;
+        transform-origin: top center;
+        background: rgb(3, 198, 233);
+    }
+}
+.rarm
+{
+    height: 85px;
+    width: 40px;
+    background: chartreuse;
+    margin-top: 15%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40% ;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40;
+    
+   
+}
+.container:hover .rarm{
+    animation: rarm 1s infinite;
+}
+@keyframes rarm{
+    0%{
+        transform:rotate(90deg) ;
+        transform-origin: top center;
+        background: red;
+
+    }
+    25%{
+        transform:rotate(0deg) ;
+        transform-origin: top center;
+        background: rgb(98, 6, 236);
+    }
+    50%{
+        transform:rotate(-90deg) ;
+        transform-origin: top center;
+        background: blueviolet;
+    }
+    75%{
+        transform:rotate(0deg) ;
+        transform-origin: top center;
+        background: rgb(227, 206, 14);
+    }
+    100%{
+        transform:rotate(90deg) ;
+        transform-origin: top center;
+        background: rgb(3, 198, 233);
+    }}
+.center{
+height: 140px;
+width: 250px;
+background: rgb(119, 225, 13);
+margin-top: 20px;
+border-bottom-left-radius: 30%;
+border-bottom-right-radius: 30%;
+position: relative;
+animation-duration: 4s;
+animation-iteration-count: 2;
+animation-direction: alternate;
+}
+.container:hover .center{
+    animation: center 1s infinite;
+}
+@keyframes center{
+    0%{
+        background: wheat;left:0px;top:0px;
+    }
+    25%{
+        background: blue;right:200px;top:0px;
+
+    }
+    50%{
+        background: pink;right:200px;top:0px;
+
+    }
+    75%{
+        background: yellow;left:0px;top:200px;
+
+    }
+    100%{
+        background: blueviolet;right:0px;top:0px;
+
+    }
+}
+.leg{
+display: flex;
+width: 190px;
+justify-content: space-evenly;
+margin: auto;
+}
+.lleg
+{   
+    height: 103px;
+    width: 23px;
+    background: chartreuse;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40% ;
+   
+    border-top-right-radius: 40;
+
+}
+.container:hover .lleg{
+    animation: lleg 1s infinite;
+}
+@keyframes lleg{
+    0%{
+        transform:rotate(90deg) ;
+        transform-origin: top center;
+        background: rgb(19, 212, 237);
+    }
+    25%{
+        transform:rotate(0deg) ;
+        transform-origin: top center;
+        background: rgb(234, 166, 8);
+    }
+    50%{
+        transform:rotate(-90deg) ;
+        transform-origin: top center;
+        background: pink;
+    }
+    75%{
+        transform:rotate(0deg) ;
+        transform-origin: top center;
+        background: yellow;
+    }
+    100%{
+        transform:rotate(90deg) ;
+        transform-origin: top center;
+        background: blueviolet;
+    }}
+.rleg
+{
+    height: 103px;
+    width: 23px;
+    background: chartreuse;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40% ;
+   border-top-left-radius: 40;
+    border-top-right-radius: 40;
+}
+.container:hover .rleg{
+    animation: rleg 1s infinite;
+}
+@keyframes rleg{
+    0%{
+        transform:rotate(90deg) ;
+        transform-origin: top center;
+        background: rgb(4, 231, 197);
+    }
+    25%{
+        transform:rotate(0deg) ;
+        transform-origin: top center;
+        background: rgb(234, 105, 6);
+    }
+    50%{
+        transform:rotate(-90deg) ;
+        transform-origin: top center;
+        background: pink;
+    }
+    75%{
+        transform:rotate(0deg) ;
+        transform-origin: top center;
+        background: yellow;
+    }
+    100%{
+        transform:rotate(90deg) ;
+        transform-origin: top center;
+        background: blueviolet;
+    }}
+    </style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="face">
+            <div class="eye">
+                <div class="reye"></div>
+                <div class="leye"></div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="rarm"></div>
+            <div class="center"></div>
+            <div class="larm"></div>
+            </div>
+            <div class="leg">
+                <div class="lleg"></div>
+                <div class="rleg"></div>
+            </div>
+    </div>
+    </body>
+</html>
